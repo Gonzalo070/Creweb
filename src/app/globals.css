@@ -153,9 +153,16 @@
       radial-gradient(circle at 12% 42%, var(--hero-star) 0 1px, transparent 1.5px),
       radial-gradient(circle at 82% 24%, var(--hero-star) 0 1px, transparent 1.5px),
       radial-gradient(circle at 68% 48%, var(--hero-star) 0 1px, transparent 1.5px),
-      radial-gradient(circle at 31% 20%, var(--hero-star) 0 1px, transparent 1.5px),
-      var(--color-base-bg);
+      radial-gradient(circle at 31% 20%, var(--hero-star) 0 1px, transparent 1.5px);
     box-shadow: inset 0 1px 0 var(--overlay-border), 0 40px 100px -55px var(--frame-shadow);
+  }
+
+  .planet-backdrop {
+    position: fixed;
+    z-index: 0;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
   }
 
   .hero-planet {
