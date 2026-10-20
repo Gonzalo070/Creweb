@@ -53,7 +53,6 @@
   --planet-tone-a: #174c3d;
   --planet-tone-b: #071d17;
   --planet-shadow: rgba(0, 0, 0, 0.82);
-  --planet-edge-shadow: rgba(0, 0, 0, 0.42);
   --planet-shade: rgba(0, 0, 0, 0.5);
   --planet-shade-deep: rgba(0, 0, 0, 0.86);
 }
@@ -99,7 +98,6 @@
   --planet-tone-a: #e7f3ec;
   --planet-tone-b: #d3e8dc;
   --planet-shadow: rgba(21, 75, 53, 0.18);
-  --planet-edge-shadow: rgba(21, 75, 53, 0.14);
   --planet-shade: rgba(21, 75, 53, 0.06);
   --planet-shade-deep: rgba(21, 75, 53, 0.16);
 }
@@ -112,7 +110,6 @@
   body {
     @apply bg-base-bg text-ink font-body antialiased transition-colors duration-300;
     background-image: radial-gradient(ellipse 90% 40% at 50% 0%, color-mix(in srgb, var(--color-neon-cyan), transparent 94%), transparent);
-    background-attachment: fixed;
   }
 
   h1, h2, h3, h4 {
@@ -151,6 +148,7 @@
   }
 
   .hero-orbit-frame {
+    perspective: 1400px;
     background:
       radial-gradient(ellipse 45% 34% at 50% 24%, rgba(24, 143, 111, 0.12), transparent 78%),
       radial-gradient(circle at 12% 42%, var(--hero-star) 0 1px, transparent 1.5px),
@@ -167,30 +165,24 @@
     top: 18%;
     left: 50%;
     translate: -50% 0;
-    width: max(130vw, min(145svh, 1600px));
+    width: min(135vw, 1500px);
     aspect-ratio: 1;
-    perspective: 1400px;
     pointer-events: none;
-  }
-
-  .hero-planet-surface {
-    position: absolute;
-    inset: 0;
+    will-change: transform;
+    backface-visibility: hidden;
     overflow: hidden;
     border: 1px solid var(--planet-border);
     border-radius: 50%;
-    transform-style: preserve-3d;
     background:
       radial-gradient(ellipse 20% 15% at 34% 18%, var(--planet-highlight), transparent 100%),
       radial-gradient(ellipse 56% 54% at 27% 27%, var(--planet-lit), transparent 72%),
       radial-gradient(ellipse 90% 86% at 47% 34%, var(--planet-mid), transparent 70%),
       linear-gradient(140deg, var(--planet-tone-a) 0%, var(--planet-tone-b) 42%, var(--planet-deep) 78%);
     box-shadow:
-      inset -48px -30px 100px var(--planet-shadow),
-      inset 16px 18px 58px rgba(149, 255, 221, 0.18),
-      0 -2px 12px rgba(86, 255, 218, 0.58),
-      0 -12px 48px rgba(45, 222, 183, 0.22),
-      0 28px 100px var(--planet-edge-shadow);
+      inset -30px -20px 64px var(--planet-shadow),
+      inset 12px 14px 36px rgba(149, 255, 221, 0.16),
+      0 -2px 8px rgba(86, 255, 218, 0.48),
+      0 -8px 28px rgba(45, 222, 183, 0.16);
   }
 
   .hero-planet-atmosphere {
@@ -213,7 +205,6 @@
     fill: var(--planet-map);
     stroke: var(--planet-map-line);
     stroke-width: 2;
-    filter: drop-shadow(0 0 12px color-mix(in srgb, var(--color-neon-cyan), transparent 80%));
   }
 
   .hero-planet-grid {
