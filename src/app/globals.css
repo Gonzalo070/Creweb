@@ -148,7 +148,6 @@
   }
 
   .hero-orbit-frame {
-    perspective: 1400px;
     background:
       radial-gradient(ellipse 45% 34% at 50% 24%, rgba(24, 143, 111, 0.12), transparent 78%),
       radial-gradient(circle at 12% 42%, var(--hero-star) 0 1px, transparent 1.5px),
@@ -168,8 +167,6 @@
     width: min(135vw, 1500px);
     aspect-ratio: 1;
     pointer-events: none;
-    will-change: transform;
-    backface-visibility: hidden;
     overflow: hidden;
     border: 1px solid var(--planet-border);
     border-radius: 50%;

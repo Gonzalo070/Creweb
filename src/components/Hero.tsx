@@ -1,31 +1,18 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useReducedMotion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import SiteHeader from "./SiteHeader";
 
 export default function Hero() {
-  const frameRef = useRef<HTMLDivElement>(null);
-  const reduceMotion = useReducedMotion();
-  const { scrollYProgress } = useScroll({
-    target: frameRef,
-    offset: ["start start", "end start"],
-  });
-  const planetY = useTransform(scrollYProgress, [0, 1], [0, reduceMotion ? 0 : -90]);
-  const planetScale = useTransform(scrollYProgress, [0, 1], [1, reduceMotion ? 1 : 1.04]);
-  const planetRotateY = useTransform(scrollYProgress, [0, 1], [0, reduceMotion ? 0 : 42]);
-
   return (
     <section id="top" className="px-3 pt-3 md:px-5 md:pt-5">
       <div
-        ref={frameRef}
         className="hero-frame hero-orbit-frame relative isolate min-h-[calc(100svh-0.75rem)] overflow-hidden rounded-[1.5rem] border border-[var(--overlay-border)] md:min-h-[calc(100svh-1.25rem)] md:rounded-[2rem]"
       >
-        <motion.div
+        <div
           aria-hidden="true"
           className="hero-planet"
-          style={{ y: planetY, scale: planetScale, rotateY: planetRotateY }}
         >
           <svg
             aria-hidden="true"
@@ -42,7 +29,7 @@ export default function Hero() {
           </svg>
           <div className="hero-planet-grid" />
           <div className="hero-planet-atmosphere" />
-        </motion.div>
+        </div>
 
         <div className="relative z-10 flex min-h-[calc(100svh-0.75rem)] flex-col px-5 pb-8 md:min-h-[calc(100svh-1.25rem)] md:px-12 md:pb-10">
           <SiteHeader />
