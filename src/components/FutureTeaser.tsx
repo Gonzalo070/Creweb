@@ -14,14 +14,14 @@ export default function FutureTeaser() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="mx-auto max-w-4xl"
       >
-        <SpotlightTiltCard maxTilt={5} spotlightColor="rgba(77, 99, 255, 0.2)" spotlightSize={360}>
+        <SpotlightTiltCard maxTilt={5} spotlightColor="rgba(105, 230, 199, 0.14)" spotlightSize={360}>
           <div className="glass flex flex-col items-start gap-4 rounded-3xl border-neon-violet/20 p-8 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-start gap-4 sm:items-center">
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-neon-violet/10">
                 <Wand2 className="h-5 w-5 text-neon-violet" />
               </span>
               <div>
-                <p className="font-heading text-2xl uppercase tracking-wide text-ink">
+                <p className="font-display text-xl font-semibold tracking-tight text-ink md:text-2xl">
                   Muy pronto: diseñá tu propia web
                 </p>
                 <p className="mt-1 text-sm text-ink-muted">

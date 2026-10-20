@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 
 type SectionHeadingProps = {
-  /** Palabra gigante y tenue detrás del título (mismo recurso que el hero) */
+  /** Palabra grande y tenue detrás del título. */
   watermark: string;
-  /** Parte del título en Anton, en mayúsculas */
+  /** Título principal de la sección. */
   title: string;
-  /** Parte manuscrita en violeta */
+  /** Acento en el color principal del sitio. */
   accent: string;
   description?: string;
 };
@@ -17,7 +17,7 @@ export default function SectionHeading({ watermark, title, accent, description }
     <div className="relative">
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute -top-8 left-0 select-none whitespace-nowrap font-heading text-[clamp(5rem,17vw,14rem)] uppercase leading-none text-ink/[0.06]"
+        className="pointer-events-none absolute -top-8 left-0 select-none whitespace-nowrap font-display text-[clamp(5rem,17vw,14rem)] font-semibold leading-none tracking-tight text-ink/[0.035]"
       >
         {watermark}
       </span>
@@ -29,9 +29,9 @@ export default function SectionHeading({ watermark, title, accent, description }
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="relative pt-10 md:pt-16"
       >
-        <h2 className="font-heading text-5xl uppercase leading-[0.95] tracking-tight text-ink md:text-7xl">
+        <h2 className="font-display text-4xl font-semibold leading-[1.05] tracking-tight text-ink md:text-6xl">
           {title}{" "}
-          <span className="font-script text-[1.1em] normal-case tracking-normal text-neon-cyan [text-shadow:0_0_36px_rgba(254,20,19,0.45)]">
+          <span className="font-display text-neon-cyan [text-shadow:0_0_32px_rgba(105,230,199,0.2)]">
             {accent}
           </span>
         </h2>

@@ -26,7 +26,7 @@ export default function SpotlightTiltCard({
   children,
   className = "",
   maxTilt = 10,
-  spotlightColor = "rgba(254, 20, 19, 0.16)",
+  spotlightColor = "rgba(105, 230, 199, 0.14)",
   spotlightSize = 320,
 }: SpotlightTiltCardProps) {
   const ref = useRef<HTMLDivElement>(null);

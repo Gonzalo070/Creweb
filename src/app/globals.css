@@ -1,27 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --color-base-bg: #000b57;
-  --color-base-surface: #000f70;
-  --color-base-border: #0a1a8c;
+  --color-base-bg: #050b0a;
+  --color-base-surface: #0a1512;
+  --color-base-border: #203a32;
 
-  --color-neon-cyan: #fe1413;
-  --color-neon-violet: #4d63ff;
-  --color-neon-emerald: #9fb0ff;
+  --color-neon-cyan: #69e6c7;
+  --color-neon-violet: #8bcab5;
+  --color-neon-emerald: #38b891;
 
-  --color-ink: #f4f6ff;
-  --color-ink-muted: #a8b2e6;
-  --color-ink-faint: #7480c4;
+  --color-ink: #f2f8f5;
+  --color-ink-muted: #a7b8b1;
+  --color-ink-faint: #71877d;
 
   --font-display: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;
-  /* Titulares condensados en mayúsculas y acentos manuscritos (estilo del hero) */
-  --font-heading: var(--font-anton), Impact, sans-serif;
-  --font-script: var(--font-caveat), cursive;
+  --font-heading: var(--font-space-grotesk), sans-serif;
 
-  --shadow-glow-cyan: 0 0 40px -8px rgba(254, 20, 19, 0.4);
-  --shadow-glow-violet: 0 0 40px -8px rgba(77, 99, 255, 0.4);
-  --shadow-glow-emerald: 0 0 40px -8px rgba(159, 176, 255, 0.35);
+  --shadow-glow-cyan: 0 0 40px -8px rgba(71, 230, 190, 0.3);
+  --shadow-glow-violet: 0 0 40px -8px rgba(115, 205, 170, 0.24);
+  --shadow-glow-emerald: 0 0 40px -8px rgba(40, 184, 145, 0.26);
   --shadow-card-inset: inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
 
   --radius-3xl: 1.75rem;
@@ -38,40 +36,72 @@
   --overlay-border: rgba(255, 255, 255, 0.1);
   --overlay-border-strong: rgba(255, 255, 255, 0.26);
 
-  --frame-base: #00083f;
-  --frame-light: rgba(0, 19, 158, 0.8);
-  --frame-accent: rgba(254, 20, 19, 0.3);
-  --frame-shadow: rgba(0, 4, 40, 0.8);
+  --frame-base: #08110e;
+  --frame-light: rgba(18, 97, 75, 0.42);
+  --frame-accent: rgba(42, 167, 128, 0.16);
+  --frame-shadow: rgba(0, 8, 6, 0.72);
+  --hero-star: rgba(168, 255, 226, 0.34);
+  --planet-border: rgba(112, 255, 215, 0.42);
+  --planet-highlight: rgba(206, 255, 239, 0.48);
+  --planet-lit: rgba(53, 157, 125, 0.58);
+  --planet-mid: rgba(9, 52, 40, 0.92);
+  --planet-deep: #020806;
+  --planet-map: rgba(91, 203, 162, 0.26);
+  --planet-map-line: rgba(143, 255, 220, 0.58);
+  --planet-grid-line: rgba(152, 255, 226, 0.2);
+  --planet-atmosphere: rgba(90, 255, 217, 0.45);
+  --planet-tone-a: #174c3d;
+  --planet-tone-b: #071d17;
+  --planet-shadow: rgba(0, 0, 0, 0.82);
+  --planet-edge-shadow: rgba(0, 0, 0, 0.42);
+  --planet-shade: rgba(0, 0, 0, 0.5);
+  --planet-shade-deep: rgba(0, 0, 0, 0.86);
 }
 
 [data-theme="light"] {
-  --color-base-bg: #f4f6ff;
+  --color-base-bg: #f1f6f3;
   --color-base-surface: #ffffff;
-  --color-base-border: #dce1f7;
+  --color-base-border: #d5e3db;
 
-  --color-neon-cyan: #fe1413;
-  --color-neon-violet: #00139e;
-  --color-neon-emerald: #000b57;
+  --color-neon-cyan: #157c62;
+  --color-neon-violet: #367b68;
+  --color-neon-emerald: #105d4d;
 
-  --color-ink: #000b57;
-  --color-ink-muted: #46508f;
-  --color-ink-faint: #8189b8;
+  --color-ink: #10251e;
+  --color-ink-muted: #4c6258;
+  --color-ink-faint: #7c9086;
 
-  --shadow-glow-cyan: 0 0 34px -10px rgba(254, 20, 19, 0.32);
-  --shadow-glow-violet: 0 0 34px -10px rgba(0, 19, 158, 0.3);
-  --shadow-glow-emerald: 0 0 34px -10px rgba(0, 11, 87, 0.26);
-  --shadow-card-inset: inset 0 1px 0 0 rgba(0, 11, 87, 0.03);
+  --shadow-glow-cyan: 0 0 34px -10px rgba(21, 124, 98, 0.2);
+  --shadow-glow-violet: 0 0 34px -10px rgba(54, 123, 104, 0.16);
+  --shadow-glow-emerald: 0 0 34px -10px rgba(16, 93, 77, 0.18);
+  --shadow-card-inset: inset 0 1px 0 0 rgba(16, 37, 30, 0.04);
 
-  --overlay-1: rgba(0, 11, 87, 0.035);
-  --overlay-2: rgba(0, 11, 87, 0.05);
-  --overlay-3: rgba(0, 11, 87, 0.1);
-  --overlay-border: rgba(0, 11, 87, 0.09);
-  --overlay-border-strong: rgba(0, 11, 87, 0.2);
+  --overlay-1: rgba(16, 61, 44, 0.035);
+  --overlay-2: rgba(16, 61, 44, 0.055);
+  --overlay-3: rgba(16, 61, 44, 0.12);
+  --overlay-border: rgba(16, 61, 44, 0.1);
+  --overlay-border-strong: rgba(16, 61, 44, 0.22);
 
-  --frame-base: #e8ecfd;
+  --frame-base: #eaf2ed;
   --frame-light: rgba(255, 255, 255, 0.95);
-  --frame-accent: rgba(254, 20, 19, 0.14);
-  --frame-shadow: rgba(0, 11, 87, 0.2);
+  --frame-accent: rgba(56, 145, 112, 0.12);
+  --frame-shadow: rgba(19, 53, 39, 0.16);
+  --hero-star: rgba(44, 112, 84, 0.28);
+  --planet-border: rgba(25, 121, 91, 0.45);
+  --planet-highlight: rgba(255, 255, 255, 0.95);
+  --planet-lit: rgba(99, 183, 147, 0.48);
+  --planet-mid: rgba(44, 112, 84, 0.54);
+  --planet-deep: #c3ded0;
+  --planet-map: rgba(30, 112, 83, 0.22);
+  --planet-map-line: rgba(22, 107, 79, 0.56);
+  --planet-grid-line: rgba(31, 112, 84, 0.17);
+  --planet-atmosphere: rgba(36, 150, 111, 0.38);
+  --planet-tone-a: #e7f3ec;
+  --planet-tone-b: #d3e8dc;
+  --planet-shadow: rgba(21, 75, 53, 0.18);
+  --planet-edge-shadow: rgba(21, 75, 53, 0.14);
+  --planet-shade: rgba(21, 75, 53, 0.06);
+  --planet-shade-deep: rgba(21, 75, 53, 0.16);
 }
 
 @layer base {
@@ -81,6 +111,8 @@
 
   body {
     @apply bg-base-bg text-ink font-body antialiased transition-colors duration-300;
+    background-image: radial-gradient(ellipse 90% 40% at 50% 0%, color-mix(in srgb, var(--color-neon-cyan), transparent 94%), transparent);
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4 {
@@ -107,7 +139,7 @@
     @apply bg-base-surface/70 backdrop-blur-xl border border-[var(--overlay-border)];
   }
 
-  /* Marco del hero: superficie oscura con luz central y resplandor violeta en la esquina */
+  /* Superficie de secciones con luz verde suave. */
   .hero-frame {
     background:
       radial-gradient(60% 55% at 50% 40%, var(--frame-light), transparent 72%),
@@ -119,79 +151,99 @@
   }
 
   .hero-orbit-frame {
-    --color-ink: #f4f6ff;
-    --color-ink-muted: #a8b2e6;
-    --color-ink-faint: #7480c4;
-    --color-neon-cyan: #69e6c7;
-    --overlay-border: rgba(255, 255, 255, 0.12);
-    --overlay-border-strong: rgba(105, 230, 199, 0.48);
     background:
-      radial-gradient(ellipse 45% 34% at 50% 24%, rgba(0, 129, 106, 0.12), transparent 78%),
-      radial-gradient(circle at 12% 42%, rgba(115, 190, 174, 0.35) 0 1px, transparent 1.5px),
-      radial-gradient(circle at 82% 24%, rgba(115, 190, 174, 0.28) 0 1px, transparent 1.5px),
-      radial-gradient(circle at 68% 48%, rgba(115, 190, 174, 0.24) 0 1px, transparent 1.5px),
-      radial-gradient(circle at 31% 20%, rgba(115, 190, 174, 0.2) 0 1px, transparent 1.5px),
-      #020706;
-    box-shadow: inset 0 1px 0 rgba(191, 255, 240, 0.12), 0 40px 100px -55px rgba(0, 0, 0, 0.8);
+      radial-gradient(ellipse 45% 34% at 50% 24%, rgba(24, 143, 111, 0.12), transparent 78%),
+      radial-gradient(circle at 12% 42%, var(--hero-star) 0 1px, transparent 1.5px),
+      radial-gradient(circle at 82% 24%, var(--hero-star) 0 1px, transparent 1.5px),
+      radial-gradient(circle at 68% 48%, var(--hero-star) 0 1px, transparent 1.5px),
+      radial-gradient(circle at 31% 20%, var(--hero-star) 0 1px, transparent 1.5px),
+      var(--color-base-bg);
+    box-shadow: inset 0 1px 0 var(--overlay-border), 0 40px 100px -55px var(--frame-shadow);
   }
 
   .hero-planet {
     position: absolute;
     z-index: 0;
-    top: 25%;
+    top: 18%;
     left: 50%;
     translate: -50% 0;
-    width: max(130vw, 1100px);
+    width: max(130vw, min(145svh, 1600px));
     aspect-ratio: 1;
-    transform-origin: 50% 50%;
+    perspective: 1400px;
     pointer-events: none;
-    will-change: transform;
   }
 
   .hero-planet-surface {
     position: absolute;
     inset: 0;
     overflow: hidden;
-    border: 1px solid rgba(114, 255, 222, 0.3);
+    border: 1px solid var(--planet-border);
     border-radius: 50%;
+    transform-style: preserve-3d;
     background:
-      radial-gradient(ellipse 52% 16% at 50% 2%, rgba(59, 202, 170, 0.2), transparent 92%),
-      radial-gradient(ellipse 82% 48% at 50% 4%, rgba(9, 38, 33, 0.42), transparent 75%),
-      linear-gradient(180deg, #030c0a 0%, #020706 54%);
+      radial-gradient(ellipse 20% 15% at 34% 18%, var(--planet-highlight), transparent 100%),
+      radial-gradient(ellipse 56% 54% at 27% 27%, var(--planet-lit), transparent 72%),
+      radial-gradient(ellipse 90% 86% at 47% 34%, var(--planet-mid), transparent 70%),
+      linear-gradient(140deg, var(--planet-tone-a) 0%, var(--planet-tone-b) 42%, var(--planet-deep) 78%);
     box-shadow:
-      0 -2px 8px rgba(86, 255, 218, 0.68),
-      0 -8px 34px rgba(45, 222, 183, 0.3),
-      0 -24px 90px rgba(15, 120, 98, 0.16);
+      inset -48px -30px 100px var(--planet-shadow),
+      inset 16px 18px 58px rgba(149, 255, 221, 0.18),
+      0 -2px 12px rgba(86, 255, 218, 0.58),
+      0 -12px 48px rgba(45, 222, 183, 0.22),
+      0 28px 100px var(--planet-edge-shadow);
   }
 
-  .hero-planet-rim {
+  .hero-planet-atmosphere {
     position: absolute;
-    top: 0;
-    left: 5%;
-    width: 90%;
-    height: 17%;
-    border-top: 2px solid rgba(117, 255, 226, 0.7);
-    border-radius: 50% 50% 0 0 / 36% 36% 0 0;
-    filter: blur(5px);
-    box-shadow: 0 -2px 15px rgba(67, 255, 218, 0.56);
+    inset: 0;
+    border-radius: inherit;
+    background:
+      radial-gradient(ellipse at 50% 49%, transparent 58%, var(--planet-atmosphere) 60%, transparent 61.5%),
+      linear-gradient(105deg, transparent 14%, var(--planet-shade) 73%, var(--planet-shade-deep) 100%);
+    box-shadow: inset 0 2px 15px rgba(155, 255, 231, 0.15);
+    pointer-events: none;
+  }
+
+  .hero-planet-map {
+    position: absolute;
+    top: 20%;
+    left: -24%;
+    width: 148%;
+    height: 58%;
+    fill: var(--planet-map);
+    stroke: var(--planet-map-line);
+    stroke-width: 2;
+    filter: drop-shadow(0 0 12px color-mix(in srgb, var(--color-neon-cyan), transparent 80%));
+  }
+
+  .hero-planet-grid {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+      radial-gradient(ellipse 60% 90% at 50% 50%, transparent 54%, var(--planet-grid-line) 54.3%, transparent 54.8%),
+      radial-gradient(ellipse 28% 90% at 50% 50%, transparent 56%, var(--planet-grid-line) 56.4%, transparent 57%),
+      linear-gradient(0deg, transparent 49.8%, var(--planet-grid-line) 50%, transparent 50.3%);
+    opacity: 0.55;
+    pointer-events: none;
   }
 
   .hero-eyebrow {
-    color: #80d9c4;
-    border: 1px solid rgba(94, 224, 195, 0.3);
-    background: rgba(4, 27, 23, 0.72);
+    color: var(--color-neon-cyan);
+    border: 1px solid var(--overlay-border-strong);
+    background: color-mix(in srgb, var(--color-base-bg), transparent 18%);
     box-shadow: inset 0 0 18px rgba(40, 195, 160, 0.08);
   }
 
   .hero-title-accent {
-    color: #d5f4ec;
+    color: var(--color-neon-cyan);
     text-shadow: 0 0 42px rgba(95, 231, 198, 0.2);
   }
 
   .hero-cta {
-    color: #a2f0dc;
-    border: 1px solid rgba(103, 235, 205, 0.52);
-    background: linear-gradient(135deg, rgba(20, 101, 82, 0.42), rgba(2, 20, 17, 0.85));
+    color: var(--color-neon-cyan);
+    border: 1px solid var(--overlay-border-strong);
+    background: linear-gradient(135deg, color-mix(in srgb, var(--color-neon-cyan), transparent 82%), var(--color-base-bg));
     box-shadow: inset 0 1px 0 rgba(203, 255, 239, 0.13), 0 0 28px rgba(44, 204, 167, 0.12);
   }
 
@@ -211,8 +263,8 @@
 
 @media (max-width: 640px) {
   .hero-planet {
-    top: 29%;
-    width: max(115vw, 460px);
+    top: 26%;
+    width: min(118vw, 68svh);
   }
 }
 

@@ -40,7 +40,7 @@ export default function Projects() {
                 {/* Nombre del proyecto como marca de agua, igual que el título del hero */}
                 <span
                   aria-hidden="true"
-                  className="pointer-events-none absolute -bottom-6 -left-2 select-none whitespace-nowrap font-heading text-[clamp(6rem,19vw,15rem)] uppercase leading-none text-ink/[0.05]"
+                  className="pointer-events-none absolute -bottom-6 -left-2 select-none whitespace-nowrap font-display text-[clamp(6rem,19vw,15rem)] font-semibold leading-none tracking-tight text-ink/[0.035]"
                 >
                   {project.name}
                 </span>
@@ -57,10 +57,10 @@ export default function Projects() {
                       <span className="text-sm text-ink-muted">{project.category}</span>
                     </div>
 
-                    <h3 className="mt-5 font-heading text-6xl uppercase leading-none tracking-tight text-ink md:text-8xl">
+                    <h3 className="mt-5 font-display text-5xl font-semibold leading-none tracking-tight text-ink md:text-7xl">
                       {project.name}
                     </h3>
-                    <p className="mt-4 font-script text-2xl leading-snug text-neon-cyan md:text-3xl">
+                    <p className="mt-4 font-display text-lg font-medium leading-snug text-neon-cyan md:text-xl">
                       {project.tagline}
                     </p>
                     <p className="mt-5 max-w-md text-sm leading-relaxed text-ink-muted md:text-base">
@@ -129,7 +129,7 @@ export default function Projects() {
                 <Lightbulb className="h-5 w-5 text-neon-violet" />
               </span>
               <div>
-                <p className="font-heading text-2xl uppercase tracking-wide text-ink">
+                <p className="font-display text-xl font-semibold tracking-tight text-ink md:text-2xl">
                   Tu idea puede ser la próxima
                 </p>
                 <p className="mt-1 text-sm text-ink-muted">

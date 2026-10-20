@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anton, Caveat_Brush, Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -12,22 +12,6 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
   weight: ["500", "600", "700"],
-  display: "swap",
-});
-
-// Titulares condensados en mayúsculas (hero y secciones)
-const anton = Anton({
-  subsets: ["latin"],
-  variable: "--font-anton",
-  weight: "400",
-  display: "swap",
-});
-
-// Acentos manuscritos en violeta
-const caveat = Caveat_Brush({
-  subsets: ["latin"],
-  variable: "--font-caveat",
-  weight: "400",
   display: "swap",
 });
 
@@ -45,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${inter.variable} ${spaceGrotesk.variable} ${anton.variable} ${caveat.variable}`}
+      className={`${inter.variable} ${spaceGrotesk.variable}`}
       suppressHydrationWarning
     >
       <head>

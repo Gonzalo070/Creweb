@@ -41,19 +41,19 @@ const ACCENT_STYLES = {
     ring: "group-hover:border-neon-cyan/40",
     glow: "group-hover:shadow-glow-cyan",
     icon: "bg-neon-cyan/10 text-neon-cyan",
-    spotlight: "rgba(254, 20, 19, 0.16)",
+    spotlight: "rgba(105, 230, 199, 0.14)",
   },
   violet: {
     ring: "group-hover:border-neon-violet/40",
     glow: "group-hover:shadow-glow-violet",
     icon: "bg-neon-violet/10 text-neon-violet",
-    spotlight: "rgba(77, 99, 255, 0.2)",
+    spotlight: "rgba(139, 202, 181, 0.16)",
   },
   emerald: {
     ring: "group-hover:border-neon-emerald/40",
     glow: "group-hover:shadow-glow-emerald",
     icon: "bg-neon-emerald/10 text-neon-emerald",
-    spotlight: "rgba(159, 176, 255, 0.16)",
+    spotlight: "rgba(56, 184, 145, 0.14)",
   },
 } as const;
 
@@ -87,7 +87,7 @@ export default function Services() {
                     <span className={`inline-flex h-11 w-11 items-center justify-center rounded-2xl ${styles.icon}`}>
                       <Icon className="h-5 w-5" />
                     </span>
-                    <h3 className="mt-6 font-heading text-2xl uppercase leading-tight tracking-wide text-ink">
+                    <h3 className="mt-6 font-display text-xl font-semibold leading-tight tracking-tight text-ink md:text-2xl">
                       {service.title}
                     </h3>
                     <p className="mt-3 text-sm leading-relaxed text-ink-muted">{service.description}</p>
