@@ -1,25 +1,8 @@
 import type { Metadata } from "next";
-import { Big_Shoulders_Display, Fraunces } from "next/font/google";
 import SiteHeader from "@/components/SiteHeader";
 import CodeAtmosphere from "@/components/CodeAtmosphere";
 import CTAFooter from "@/components/CTAFooter";
 import "./globals.css";
-
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  weight: "100 900",
-  style: "italic",
-  axes: ["SOFT", "WONK"],
-  variable: "--font-fraunces",
-  display: "swap",
-});
-
-const bigShoulders = Big_Shoulders_Display({
-  subsets: ["latin"],
-  weight: "100 900",
-  variable: "--font-big-shoulders",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Creweb — Biblioteca de micro apps y páginas web a medida",
@@ -33,12 +16,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="es"
-      className={`${fraunces.variable} ${bigShoulders.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang="es" suppressHydrationWarning>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,100..900,100,1&display=swap"
+          rel="stylesheet"
+        />
         {/* Aplica el tema guardado (o el del sistema) antes del primer paint,
             para que no se vea un flash del tema equivocado al cargar. */}
         <script
