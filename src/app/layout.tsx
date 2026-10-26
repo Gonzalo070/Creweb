@@ -1,21 +1,23 @@
 import type { Metadata } from "next";
-import { Space_Mono, Syne } from "next/font/google";
+import { Big_Shoulders_Display, Fraunces } from "next/font/google";
 import SiteHeader from "@/components/SiteHeader";
 import CodeAtmosphere from "@/components/CodeAtmosphere";
 import CTAFooter from "@/components/CTAFooter";
 import "./globals.css";
 
-const spaceMono = Space_Mono({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font-space-mono",
+  weight: "100 900",
+  style: "italic",
+  axes: ["SOFT", "WONK"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
-const syne = Syne({
+const bigShoulders = Big_Shoulders_Display({
   subsets: ["latin"],
-  variable: "--font-syne",
-  weight: ["800"],
+  weight: "100 900",
+  variable: "--font-big-shoulders",
   display: "swap",
 });
 
@@ -33,7 +35,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${spaceMono.variable} ${syne.variable}`}
+      className={`${fraunces.variable} ${bigShoulders.variable}`}
       suppressHydrationWarning
     >
       <head>
