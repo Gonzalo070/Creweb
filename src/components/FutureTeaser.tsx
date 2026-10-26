@@ -6,7 +6,7 @@ import SpotlightTiltCard from "./SpotlightTiltCard";
 
 export default function FutureTeaser() {
   return (
-    <section id="vision" className="px-6 py-12 md:py-16">
+    <section id="creador" className="px-6 py-12 md:py-16">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,11 +22,10 @@ export default function FutureTeaser() {
               </span>
               <div>
                 <p className="font-display text-xl font-semibold tracking-tight text-ink md:text-2xl">
-                  Muy pronto: diseñá tu propia web
+                  Muy pronto: armá tu propia página web
                 </p>
                 <p className="mt-1 text-sm text-ink-muted">
-                  Estamos construyendo un builder self-service para que armes y publiques tu sitio sin
-                  escribir código.
+                  Estamos preparando un espacio para que puedas elegir un diseño, personalizarlo y publicar tu web de forma sencilla.
                 </p>
               </div>
             </div>
@@ -34,7 +33,7 @@ export default function FutureTeaser() {
               href="#contacto"
               className="whitespace-nowrap rounded-lg border border-[var(--overlay-border-strong)] px-5 py-2.5 text-sm text-ink transition-colors hover:bg-[var(--overlay-2)]"
             >
-              Avisame cuando esté
+              Quiero saber más
             </a>
           </div>
         </SpotlightTiltCard>

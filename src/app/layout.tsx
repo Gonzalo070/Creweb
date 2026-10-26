@@ -16,9 +16,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Creweb — Micro apps y sitios web a medida",
+  title: "Creweb — Biblioteca de micro apps y páginas web a medida",
   description:
-    "Diseñamos y programamos micro apps y sitios web de punta a punta. Mirá los proyectos que ya están online.",
+    "Explorá nuestra biblioteca de micro apps, conocé Creweb y descubrí cómo crear una página web a medida.",
 };
 
 export default function RootLayout({

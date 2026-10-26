@@ -21,18 +21,18 @@ export default function Hero() {
               className="flex flex-col items-center"
             >
               <span className="hero-eyebrow rounded-full px-4 py-2 text-xs font-medium tracking-wide md:text-sm">
-                Software hecho a tu medida
+                Una biblioteca de micro apps + ideas hechas a medida
               </span>
               <h1 className="mt-7 max-w-4xl font-display text-balance text-4xl font-semibold leading-[1.08] tracking-[-0.045em] text-ink sm:text-5xl md:mt-8 md:text-7xl lg:text-[5.5rem]">
-                Ideas que toman forma.
+                Pequeñas herramientas.
                 <br className="hidden sm:block" />
-                <span className="hero-title-accent">Experiencias que conectan.</span>
+                <span className="hero-title-accent">Grandes soluciones.</span>
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg md:mt-7">
-                Diseñamos y programamos sitios web y micro apps para llevar tu próximo proyecto más lejos.
+                Explorá micro apps listas para usar, conocé quiénes somos y descubrí todo lo que podemos crear para tu proyecto.
               </p>
-              <a href="#proyectos" className="hero-cta mt-8 inline-flex items-center gap-3 rounded-xl px-6 py-3.5 text-sm font-medium transition-transform hover:-translate-y-0.5 md:mt-9">
-                Conocé nuestro trabajo
+              <a href="#biblioteca" className="hero-cta mt-8 inline-flex items-center gap-3 rounded-xl px-6 py-3.5 text-sm font-medium transition-transform hover:-translate-y-0.5 md:mt-9">
+                Explorar micro apps
                 <span className="flex h-6 w-6 items-center justify-center rounded-full border border-current/30">
                   <ArrowDown className="h-3.5 w-3.5" />
                 </span>
@@ -41,9 +41,9 @@ export default function Hero() {
           </div>
 
           <div className="relative z-10 flex items-center justify-between gap-4 border-t border-[var(--overlay-border)] pt-4 text-[11px] uppercase tracking-[0.16em] text-ink-faint sm:text-xs">
-            <span>Diseño &amp; desarrollo digital</span>
+            <span>Micro apps y páginas web</span>
             <span className="hidden sm:inline">Hecho en Mendoza, para cualquier lugar</span>
-            <a href="#proyectos" className="transition-colors hover:text-ink">Scroll para explorar ↓</a>
+            <a href="#biblioteca" className="transition-colors hover:text-ink">Scroll para explorar ↓</a>
           </div>
         </div>
       </div>

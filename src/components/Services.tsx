@@ -15,23 +15,23 @@ type Service = {
 const SERVICES: Service[] = [
   {
     icon: Smartphone,
-    title: "Micro apps a medida",
+    title: "Una web hecha para tu marca",
     description:
-      "Herramientas web pensadas para resolver una tarea puntual y que funcionan desde el celular o la computadora, como HistoriaYa.",
+      "Diseñamos y desarrollamos páginas claras, rápidas y adaptadas a tu identidad, tus objetivos y las necesidades de tus clientes.",
     accent: "cyan",
   },
   {
     icon: Globe,
-    title: "Landing pages y sitios web",
+    title: "Diseño y contenido con intención",
     description:
-      "Páginas claras y rápidas para presentar tu marca, tu servicio o tu proyecto, con diseño propio y no una plantilla genérica.",
+      "Ordenamos la información para que cada sección comunique lo importante y ayude a las personas a dar el siguiente paso.",
     accent: "violet",
   },
   {
     icon: ShoppingBag,
-    title: "Tiendas online",
+    title: "Preparada para crecer",
     description:
-      "Catálogo, carrito y medios de pago integrados, para que vender por internet sea simple para vos y para tus clientes.",
+      "Construimos una base flexible que puede sumar nuevas páginas, integraciones y funciones a medida que crece tu proyecto.",
     accent: "emerald",
   },
 ];
@@ -62,10 +62,10 @@ export default function Services() {
     <section id="servicios" className="relative px-6 py-20 md:py-28">
       <div className="mx-auto max-w-6xl">
         <SectionHeading
-          watermark="Hacemos"
-          title="Qué"
-          accent="construimos"
-          description="Elegís qué necesitás hoy. Nos encargamos de que funcione bien de entrada, no solo de que se vea bien."
+          watermark="A medida"
+          title="Páginas web"
+          accent="a medida"
+          description="Cada proyecto tiene su historia. Diseñamos una experiencia propia que explica lo que hacés, transmite confianza y convierte visitas en consultas."
         />
 
         <div className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-3">

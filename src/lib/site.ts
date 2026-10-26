@@ -17,8 +17,9 @@ export const SITE = {
 };
 
 export const NAV_LINKS = [
-  { label: "Proyectos", href: "#proyectos" },
-  { label: "Qué hacemos", href: "#servicios" },
-  { label: "Proceso", href: "#proceso" },
+  { label: "Sobre nosotros", href: "#nosotros" },
+  { label: "Páginas a medida", href: "#servicios" },
+  { label: "Crear mi web", href: "#creador" },
+  { label: "Micro apps", href: "#biblioteca" },
   { label: "Contacto", href: "#contacto" },
 ];

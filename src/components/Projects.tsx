@@ -16,13 +16,13 @@ const VISUALS: Record<string, ComponentType<{ className?: string }>> = {
 
 export default function Projects() {
   return (
-    <section id="proyectos" className="relative px-3 py-20 md:px-5 md:py-28">
+    <section id="biblioteca" className="relative px-3 py-20 md:px-5 md:py-28">
       <div className="mx-auto max-w-6xl px-3 md:px-0">
         <SectionHeading
-          watermark="Proyectos"
-          title="Proyectos"
-          accent="reales"
-          description="Micro apps que ya funcionan. Cada una tiene su propia landing y se puede probar hoy."
+          watermark="Micro apps"
+          title="Biblioteca de"
+          accent="micro apps"
+          description="Herramientas web pequeñas, enfocadas y listas para resolver tareas concretas. Abrí una ficha para conocerla o probala directamente."
         />
 
         <div className="mt-12 space-y-5">
@@ -85,7 +85,7 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="group inline-flex items-center gap-2 rounded-lg bg-neon-cyan px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02] active:scale-[0.98]"
                       >
-                        Ver la landing
+                        Conocer la micro app
                         <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                       </a>
                       {project.appUrl && (

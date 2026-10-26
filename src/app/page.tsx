@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import PlanetBackdrop from "@/components/PlanetBackdrop";
 import Projects from "@/components/Projects";
+import About from "@/components/About";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import FutureTeaser from "@/components/FutureTeaser";
@@ -12,6 +13,7 @@ export default function Home() {
       <PlanetBackdrop />
       <div className="relative z-10">
         <Hero />
+        <About />
         <Projects />
         <Services />
         <Process />
