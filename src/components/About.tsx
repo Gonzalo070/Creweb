@@ -42,7 +42,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.5, delay: index * 0.08 }}
-                className="rounded-3xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-6"
+                className="depth-card rounded-3xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-6"
               >
                 <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-neon-cyan/10 text-neon-cyan">
                   <Icon className="h-5 w-5" />

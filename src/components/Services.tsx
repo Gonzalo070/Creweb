@@ -82,7 +82,7 @@ export default function Services() {
               >
                 <SpotlightTiltCard maxTilt={8} spotlightColor={styles.spotlight} className="h-full">
                   <div
-                    className={`group relative h-full rounded-3xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-7 shadow-card-inset transition-all duration-300 ${styles.ring} ${styles.glow}`}
+                    className={`depth-card group relative h-full rounded-3xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-7 shadow-card-inset transition-all duration-300 ${styles.ring} ${styles.glow}`}
                   >
                     <span className={`inline-flex h-11 w-11 items-center justify-center rounded-2xl ${styles.icon}`}>
                       <Icon className="h-5 w-5" />

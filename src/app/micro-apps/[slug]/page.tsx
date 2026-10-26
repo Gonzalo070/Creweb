@@ -27,7 +27,7 @@ export default async function MicroAppDetailPage({ params }: { params: Promise<{
   return (
     <div className="mx-auto max-w-7xl px-5 pb-20 pt-8 md:px-8 md:pt-12">
       <Link href="/micro-apps" className="inline-flex items-center gap-2 text-sm text-ink-muted transition-colors hover:text-ink"><ArrowLeft className="h-4 w-4" />Volver a la biblioteca</Link>
-      <div className="mt-8 grid overflow-hidden rounded-[2rem] border border-[var(--overlay-border)] bg-[var(--overlay-1)] md:grid-cols-[1.05fr_0.95fr]">
+      <div className="depth-card mt-8 grid overflow-hidden rounded-[2rem] border border-[var(--overlay-border)] bg-[var(--overlay-1)] md:grid-cols-[1.05fr_0.95fr]">
         <div className="flex min-h-[320px] items-center justify-center border-b border-[var(--overlay-border)] bg-[radial-gradient(ellipse_at_50%_55%,rgba(20,152,184,0.25),transparent_70%),linear-gradient(145deg,rgba(15,91,122,0.18),var(--overlay-1))] p-5 md:min-h-[600px] md:border-b-0 md:border-r">
           {Visual && <Visual className="h-auto max-h-[560px] w-full max-w-[440px] drop-shadow-[0_24px_48px_rgba(0,0,0,0.35)]" />}
         </div>

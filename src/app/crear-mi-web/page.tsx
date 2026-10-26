@@ -19,7 +19,7 @@ export default function WebsiteBuilderPage() {
         description="Estamos diseñando una herramienta para que puedas armar tu página web a tu ritmo, con una guía sencilla desde el primer paso hasta su publicación."
       />
       <section className="mx-auto grid max-w-6xl gap-6 px-6 md:grid-cols-[1.05fr_0.95fr] md:px-8">
-        <div className="hero-frame rounded-[2rem] border border-[var(--overlay-border)] p-7 sm:p-10">
+        <div className="depth-card hero-frame rounded-[2rem] border border-[var(--overlay-border)] p-7 sm:p-10">
           <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-neon-violet/10 text-neon-violet"><Wand2 className="h-6 w-6" /></span>
           <h2 className="mt-6 font-display text-2xl font-semibold text-ink">Un proceso simple para crear tu sitio</h2>
           <ul className="mt-6 space-y-4">
@@ -27,7 +27,7 @@ export default function WebsiteBuilderPage() {
           </ul>
           <p className="mt-7 rounded-xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-4 text-sm text-ink-muted">Todavía estamos trabajando en esta herramienta. Si querés contarnos qué te gustaría poder hacer, escribinos.</p>
         </div>
-        <div className="flex flex-col justify-between rounded-[2rem] border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-7 sm:p-10">
+        <div className="depth-card flex flex-col justify-between rounded-[2rem] border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-7 sm:p-10">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-neon-cyan">Mientras tanto</p>
             <h2 className="mt-4 font-display text-2xl font-semibold text-ink">Podemos crearla con vos</h2>

@@ -23,7 +23,7 @@ export default function Home() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {DESTINATIONS.map(({ href, title, description, icon: Icon, label }) => (
-            <Link key={href} href={href} className="group rounded-3xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[var(--overlay-border-strong)] hover:bg-[var(--overlay-2)]">
+            <Link key={href} href={href} className="depth-card group rounded-3xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-6 hover:border-[var(--overlay-border-strong)] hover:bg-[var(--overlay-2)]">
               <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-neon-cyan/10 text-neon-cyan"><Icon className="h-5 w-5" /></span>
               <h3 className="mt-5 font-display text-xl font-semibold text-ink">{title}</h3>
               <p className="mt-2 min-h-[3rem] text-sm leading-relaxed text-ink-muted">{description}</p>

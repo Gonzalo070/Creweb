@@ -82,7 +82,7 @@ export default function Projects() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-60px" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="group flex h-full flex-col overflow-hidden rounded-3xl border border-[var(--overlay-border)] bg-[var(--frame-base)] transition duration-300 hover:-translate-y-1 hover:border-[var(--overlay-border-strong)] hover:shadow-glow-cyan"
+                    className="depth-card group flex h-full flex-col overflow-hidden rounded-3xl border border-[var(--overlay-border)] bg-[var(--frame-base)] hover:border-[var(--overlay-border-strong)] hover:shadow-glow-cyan"
                   >
                     <div className="relative flex aspect-[1.35/1] items-center justify-center overflow-hidden border-b border-[var(--overlay-border)] bg-[radial-gradient(ellipse_at_50%_60%,rgba(20,152,184,0.25),transparent_70%),linear-gradient(145deg,rgba(15,91,122,0.2),var(--overlay-1))] p-3">
                       {project.status === "online" && (
