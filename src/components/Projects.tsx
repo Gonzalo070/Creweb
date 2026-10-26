@@ -38,7 +38,7 @@ export default function Projects() {
         <div className="mt-12 overflow-hidden rounded-[2rem] border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-4 sm:p-6 md:p-8">
           <div className="flex flex-col gap-5 border-b border-[var(--overlay-border)] pb-6 md:flex-row md:items-center md:justify-between">
             <div>
-              <p className="font-display text-lg font-semibold text-ink">Catálogo de micro apps</p>
+              <p className="text-lg text-ink">Catálogo de micro apps</p>
               <p className="mt-1 text-sm text-ink-muted">Encontrá una herramienta para lo que necesitás.</p>
             </div>
             <label className="flex h-11 w-full items-center gap-2.5 rounded-xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] px-3 text-ink-muted md:max-w-xs">
@@ -61,7 +61,7 @@ export default function Projects() {
                 type="button"
                 onClick={() => setCategory(item)}
                 aria-pressed={category === item}
-                className={`rounded-full px-4 py-2 text-sm transition-colors ${category === item ? "bg-neon-cyan text-white" : "border border-[var(--overlay-border)] text-ink-muted hover:bg-[var(--overlay-2)] hover:text-ink"}`}
+                className={`rounded-full px-4 py-2 text-sm transition-colors ${category === item ? "bg-neon-cyan text-base-bg" : "border border-[var(--overlay-border)] text-ink-muted hover:bg-[var(--overlay-2)] hover:text-ink"}`}
               >
                 {item}
               </button>
@@ -84,7 +84,7 @@ export default function Projects() {
                     transition={{ duration: 0.5, ease: "easeOut" }}
                     className="depth-card group flex h-full flex-col overflow-hidden rounded-3xl border border-[var(--overlay-border)] bg-[var(--frame-base)] hover:border-[var(--overlay-border-strong)] hover:shadow-glow-cyan"
                   >
-                    <div className="relative flex aspect-[1.35/1] items-center justify-center overflow-hidden border-b border-[var(--overlay-border)] bg-[radial-gradient(ellipse_at_50%_60%,rgba(20,152,184,0.25),transparent_70%),linear-gradient(145deg,rgba(15,91,122,0.2),var(--overlay-1))] p-3">
+                    <div className="relative flex aspect-[1.35/1] items-center justify-center overflow-hidden border-b border-[var(--overlay-border)] bg-[radial-gradient(ellipse_at_50%_60%,rgba(244,235,208,0.12),transparent_70%),linear-gradient(145deg,rgba(244,235,208,0.06),var(--overlay-1))] p-3">
                       {project.status === "online" && (
                         <span className="absolute left-4 top-4 z-10 inline-flex items-center gap-2 rounded-full border border-[var(--overlay-border)] bg-[var(--frame-base)]/90 px-3 py-1.5 text-[11px] font-medium text-ink backdrop-blur">
                           <span className="h-1.5 w-1.5 rounded-full bg-neon-emerald shadow-glow-emerald" />
@@ -101,7 +101,7 @@ export default function Projects() {
                           <span className="rounded-md bg-neon-emerald/10 px-2 py-1 text-[10px] font-medium uppercase tracking-wide text-neon-emerald">Lista para usar</span>
                         )}
                       </div>
-                      <h3 className="mt-3 font-display text-2xl font-semibold tracking-tight text-ink">{project.name}</h3>
+                      <h3 className="mt-3 font-display text-2xl font-extrabold tracking-tight text-ink">{project.name}</h3>
                       <p className="mt-2 text-sm leading-relaxed text-ink-muted">{project.description}</p>
 
                       <div className="mt-5 flex flex-wrap gap-2">
@@ -113,7 +113,7 @@ export default function Projects() {
                       <div className="mt-6 flex flex-wrap gap-2 border-t border-[var(--overlay-border)] pt-4">
                         <Link
                           href={`/micro-apps/${project.slug}`}
-                          className="group/link inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-neon-cyan px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-neon-emerald"
+                          className="group/link inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-neon-cyan px-4 py-3 text-sm font-medium text-base-bg transition-colors hover:bg-neon-emerald"
                         >
                           Ver detalles
                           <ArrowUpRight className="h-4 w-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
@@ -145,7 +145,7 @@ export default function Projects() {
                     <Sparkles className="h-5 w-5" />
                   </span>
                   <p className="mt-5 text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">Colección en crecimiento</p>
-                  <h3 className="mt-2 font-display text-2xl font-semibold leading-tight text-ink">¿Qué herramienta te gustaría encontrar?</h3>
+                  <h3 className="mt-2 font-display text-2xl font-extrabold leading-tight text-ink">¿Qué herramienta te gustaría encontrar?</h3>
                   <p className="mt-3 text-sm leading-relaxed text-ink-muted">Estamos sumando nuevas ideas a la biblioteca. Contanos qué tarea te gustaría resolver con una micro app.</p>
                 </div>
                 <a href="#contacto" className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-neon-cyan transition-colors hover:text-ink">
@@ -155,7 +155,7 @@ export default function Projects() {
             </div>
           ) : (
             <div className="rounded-2xl border border-dashed border-[var(--overlay-border-strong)] px-6 py-14 text-center">
-              <p className="font-display text-lg font-medium text-ink">No encontramos herramientas con esa búsqueda.</p>
+              <p className="text-lg text-ink">No encontramos herramientas con esa búsqueda.</p>
               <button type="button" onClick={() => { setQuery(""); setCategory("Todas"); }} className="mt-3 text-sm text-neon-cyan hover:text-ink">Limpiar filtros</button>
             </div>
           )}
@@ -168,7 +168,7 @@ export default function Projects() {
             className="mt-6 flex flex-col gap-4 rounded-2xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6"
           >
             <div>
-              <p className="font-display text-lg font-semibold text-ink">¿Tenés una idea para una micro app?</p>
+              <p className="font-display text-lg font-extrabold text-ink">¿Tenés una idea para una micro app?</p>
               <p className="mt-1 text-sm text-ink-muted">La próxima herramienta de la biblioteca podría nacer de tu proyecto.</p>
             </div>
             <a href="#contacto" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-[var(--overlay-border-strong)] px-5 py-3 text-sm text-ink transition-colors hover:bg-[var(--overlay-2)]">

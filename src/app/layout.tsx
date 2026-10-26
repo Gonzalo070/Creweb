@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Space_Mono, Syne } from "next/font/google";
 import SiteHeader from "@/components/SiteHeader";
 import CodeAtmosphere from "@/components/CodeAtmosphere";
 import CTAFooter from "@/components/CTAFooter";
 import "./globals.css";
 
-const inter = Inter({
+const spaceMono = Space_Mono({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400"],
+  variable: "--font-space-mono",
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
-  weight: ["500", "600", "700"],
+  variable: "--font-syne",
+  weight: ["800"],
   display: "swap",
 });
 
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${inter.variable} ${spaceGrotesk.variable}`}
+      className={`${spaceMono.variable} ${syne.variable}`}
       suppressHydrationWarning
     >
       <head>
@@ -40,7 +41,7 @@ export default function RootLayout({
             para que no se vea un flash del tema equivocado al cargar. */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('creweb-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`,
+            __html: `(function(){try{var t=localStorage.getItem('creweb-theme')||'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`,
           }}
         />
       </head>

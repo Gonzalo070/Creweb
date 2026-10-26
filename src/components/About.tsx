@@ -47,7 +47,7 @@ export default function About() {
                 <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-neon-cyan/10 text-neon-cyan">
                   <Icon className="h-5 w-5" />
                 </span>
-                <h3 className="mt-5 font-display text-xl font-semibold text-ink">{pillar.title}</h3>
+                <h3 className="mt-5 font-display text-xl font-extrabold text-ink">{pillar.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-ink-muted">{pillar.description}</p>
               </motion.article>
             );

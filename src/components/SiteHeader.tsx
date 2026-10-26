@@ -31,7 +31,7 @@ export default function SiteHeader() {
             <Sparkles className="h-4 w-4 text-neon-cyan" strokeWidth={2.5} />
             <span className="absolute inset-0 rounded-lg bg-neon-cyan/30 blur-md" />
           </span>
-          <span className="font-heading text-2xl uppercase leading-none tracking-wide text-ink">{SITE.name}</span>
+          <span className="font-heading text-2xl font-extrabold uppercase leading-none tracking-wide text-ink">{SITE.name}</span>
         </Link>
 
         <nav aria-label="Principal" className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-5 lg:flex xl:gap-7">

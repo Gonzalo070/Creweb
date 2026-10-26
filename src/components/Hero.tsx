@@ -20,7 +20,7 @@ export default function Hero() {
               <span className="hero-eyebrow inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-medium tracking-wide md:text-sm">
                 <span className="hero-live-dot" /> Desarrollo digital, en otra dimensión
               </span>
-              <h1 className="mt-7 max-w-4xl font-display text-balance text-4xl font-semibold leading-[1.08] tracking-[-0.045em] text-ink sm:text-5xl md:mt-8 md:text-7xl lg:text-[5.5rem]">
+              <h1 className="mt-7 max-w-4xl font-display text-balance text-4xl font-extrabold leading-[1.08] tracking-[-0.045em] text-ink sm:text-5xl md:mt-8 md:text-7xl lg:text-[5.5rem]">
                 Ideas que toman forma.
                 <br className="hidden sm:block" />
                 <span className="hero-title-accent">Experiencias que se sienten.</span>

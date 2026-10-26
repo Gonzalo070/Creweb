@@ -10,7 +10,7 @@ export default function CTAFooter() {
   const mailHref = SITE.email ? `mailto:${SITE.email}` : null;
 
   const primary =
-    "inline-flex items-center gap-2 rounded-lg bg-neon-cyan px-6 py-3 text-sm font-medium text-white transition-transform hover:scale-[1.02] active:scale-[0.98]";
+    "inline-flex items-center gap-2 rounded-lg bg-neon-cyan px-6 py-3 text-sm font-medium text-base-bg transition-transform hover:scale-[1.02] active:scale-[0.98]";
   const secondary =
     "inline-flex items-center gap-2 rounded-lg border border-[var(--overlay-border-strong)] px-6 py-3 text-sm text-ink transition-colors hover:bg-[var(--overlay-2)]";
 

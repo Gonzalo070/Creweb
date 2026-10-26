@@ -79,7 +79,7 @@ export default function Process() {
                   {step.number}
                 </span>
                 <div className="pt-1">
-                  <h3 className="font-display text-xl font-semibold tracking-tight text-ink md:text-2xl">{step.title}</h3>
+                  <h3 className="font-display text-xl font-extrabold tracking-tight text-ink md:text-2xl">{step.title}</h3>
                   <p className="mt-1.5 max-w-md text-sm leading-relaxed text-ink-muted">{step.description}</p>
                 </div>
               </li>
