@@ -2,17 +2,15 @@
 
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
-import SiteHeader from "./SiteHeader";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="top" className="px-3 pt-3 md:px-5 md:pt-5">
+    <section id="top" className="px-3 pt-5 md:px-5 md:pt-8">
       <div
-        className="hero-frame hero-orbit-frame relative isolate min-h-[calc(100svh-0.75rem)] overflow-hidden rounded-[1.5rem] border border-[var(--overlay-border)] md:min-h-[calc(100svh-1.25rem)] md:rounded-[2rem]"
+        className="hero-frame hero-orbit-frame relative isolate min-h-[min(720px,calc(100svh-7rem))] overflow-hidden rounded-[1.5rem] border border-[var(--overlay-border)] md:rounded-[2rem]"
       >
-        <div className="relative z-10 flex min-h-[calc(100svh-0.75rem)] flex-col px-5 pb-8 md:min-h-[calc(100svh-1.25rem)] md:px-12 md:pb-10">
-          <SiteHeader />
-
+        <div className="relative z-10 flex min-h-[min(720px,calc(100svh-7rem))] flex-col px-5 pb-8 md:px-12 md:pb-10">
           <div className="relative z-10 flex flex-1 flex-col items-center justify-center pb-14 pt-16 text-center md:pb-20 md:pt-10">
             <motion.div
               initial={{ opacity: 0, y: 14 }}
@@ -31,19 +29,22 @@ export default function Hero() {
               <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg md:mt-7">
                 Explorá micro apps listas para usar, conocé quiénes somos y descubrí todo lo que podemos crear para tu proyecto.
               </p>
-              <a href="#biblioteca" className="hero-cta mt-8 inline-flex items-center gap-3 rounded-xl px-6 py-3.5 text-sm font-medium transition-transform hover:-translate-y-0.5 md:mt-9">
-                Explorar micro apps
+              <Link href="/micro-apps" className="hero-cta mt-8 inline-flex items-center gap-3 rounded-xl px-6 py-3.5 text-sm font-medium transition-transform hover:-translate-y-0.5 md:mt-9">
+                Explorar biblioteca
                 <span className="flex h-6 w-6 items-center justify-center rounded-full border border-current/30">
                   <ArrowDown className="h-3.5 w-3.5" />
                 </span>
-              </a>
+              </Link>
+              <Link href="/paginas-a-medida" className="mt-3 text-sm text-ink-muted underline decoration-[var(--overlay-border-strong)] underline-offset-4 transition-colors hover:text-ink">
+                Conocer las páginas a medida
+              </Link>
             </motion.div>
           </div>
 
           <div className="relative z-10 flex items-center justify-between gap-4 border-t border-[var(--overlay-border)] pt-4 text-[11px] uppercase tracking-[0.16em] text-ink-faint sm:text-xs">
             <span>Micro apps y páginas web</span>
             <span className="hidden sm:inline">Hecho en Mendoza, para cualquier lugar</span>
-            <a href="#biblioteca" className="transition-colors hover:text-ink">Scroll para explorar ↓</a>
+            <Link href="/micro-apps" className="transition-colors hover:text-ink">Explorar la biblioteca ↗</Link>
           </div>
         </div>
       </div>

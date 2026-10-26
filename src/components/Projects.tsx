@@ -2,6 +2,7 @@
 
 import { useMemo, useState, type ComponentType } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ArrowUpRight, Search, Sparkles } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 import HistoriaYaVisual from "./HistoriaYaVisual";
@@ -110,15 +111,13 @@ export default function Projects() {
                       </div>
 
                       <div className="mt-6 flex flex-wrap gap-2 border-t border-[var(--overlay-border)] pt-4">
-                        <a
-                          href={project.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <Link
+                          href={`/micro-apps/${project.slug}`}
                           className="group/link inline-flex flex-1 items-center justify-center gap-2 rounded-xl bg-neon-cyan px-4 py-3 text-sm font-medium text-white transition-colors hover:bg-neon-emerald"
                         >
                           Ver detalles
                           <ArrowUpRight className="h-4 w-4 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
-                        </a>
+                        </Link>
                         {project.appUrl && (
                           <a
                             href={project.appUrl}

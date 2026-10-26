@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
+import SiteHeader from "@/components/SiteHeader";
+import PlanetBackdrop from "@/components/PlanetBackdrop";
+import CTAFooter from "@/components/CTAFooter";
 import "./globals.css";
 
 const inter = Inter({
@@ -41,7 +44,16 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <div className="relative isolate min-h-screen">
+          <PlanetBackdrop />
+          <div className="relative z-10">
+            <SiteHeader />
+            <main>{children}</main>
+            <CTAFooter />
+          </div>
+        </div>
+      </body>
     </html>
   );
 }

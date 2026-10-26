@@ -1,5 +1,5 @@
 /**
- * Datos centrales del sitio. Todo lo que aparece en la landing y es
+ * Datos centrales del sitio. Todo lo que aparece en la web y es
  * "dato de contacto" sale de acá, para tocar en un solo lugar.
  */
 export const SITE = {
@@ -17,9 +17,8 @@ export const SITE = {
 };
 
 export const NAV_LINKS = [
-  { label: "Sobre nosotros", href: "#nosotros" },
-  { label: "Páginas a medida", href: "#servicios" },
-  { label: "Crear mi web", href: "#creador" },
-  { label: "Micro apps", href: "#biblioteca" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Sobre nosotros", href: "/nosotros" },
+  { label: "Páginas a medida", href: "/paginas-a-medida" },
+  { label: "Crear tu web", href: "/crear-mi-web" },
+  { label: "Micro apps", href: "/micro-apps" },
 ];
