@@ -37,8 +37,8 @@ export default async function MicroAppDetailPage({ params }: { params: Promise<{
             {project.status === "online" && <span className="inline-flex items-center gap-2 rounded-full border border-[var(--overlay-border)] px-3 py-1 text-xs text-ink"><span className="h-1.5 w-1.5 rounded-full bg-neon-emerald" />Disponible</span>}
           </div>
           <h1 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-ink md:text-6xl">{project.name}</h1>
-          <p className="mt-4 text-lg leading-relaxed text-neon-cyan md:text-xl">{project.tagline}</p>
-          <p className="mt-5 text-sm leading-relaxed text-ink-muted md:text-base">{project.description}</p>
+          <p className="font-subtitle mt-4 text-lg leading-relaxed text-neon-cyan md:text-xl">{project.tagline}</p>
+          <p className="font-subtitle mt-5 text-sm leading-relaxed text-ink-muted md:text-base">{project.description}</p>
           <h2 className="mt-8 font-display text-lg font-extrabold text-ink">Qué podés hacer</h2>
           <ul className="mt-4 space-y-3">
             {project.features.map((feature) => <li key={feature} className="flex items-start gap-3 text-sm text-ink-muted"><span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-neon-cyan/15"><Check className="h-3 w-3 text-neon-cyan" strokeWidth={3} /></span>{feature}</li>)}

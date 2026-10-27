@@ -48,7 +48,7 @@ export default function About() {
                   <Icon className="h-5 w-5" />
                 </span>
                 <h3 className="mt-5 font-display text-xl font-extrabold text-ink">{pillar.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-muted">{pillar.description}</p>
+                <p className="font-subtitle mt-2 text-sm leading-relaxed text-ink-muted">{pillar.description}</p>
               </motion.article>
             );
           })}

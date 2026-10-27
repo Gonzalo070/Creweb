@@ -25,13 +25,13 @@ export default function WebsiteBuilderPage() {
           <ul className="mt-6 space-y-4">
             {PLANNED_STEPS.map((step) => <li key={step} className="flex gap-3 text-sm leading-relaxed text-ink-muted"><span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-neon-cyan/15"><Check className="h-3 w-3 text-neon-cyan" /></span>{step}</li>)}
           </ul>
-          <p className="mt-7 rounded-xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-4 text-sm text-ink-muted">Todavía estamos trabajando en esta herramienta. Si querés contarnos qué te gustaría poder hacer, escribinos.</p>
+          <p className="font-subtitle mt-7 rounded-xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-4 text-sm text-ink-muted">Todavía estamos trabajando en esta herramienta. Si querés contarnos qué te gustaría poder hacer, escribinos.</p>
         </div>
         <div className="depth-card flex flex-col justify-between rounded-[2rem] border border-[var(--overlay-border)] bg-[var(--overlay-1)] p-7 sm:p-10">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-neon-cyan">Mientras tanto</p>
             <h2 className="mt-4 font-display text-2xl font-extrabold text-ink">Podemos crearla con vos</h2>
-            <p className="mt-3 text-sm leading-relaxed text-ink-muted">Si necesitás tener tu sitio en marcha hoy, mirá el servicio de páginas a medida y contanos qué estás imaginando.</p>
+            <p className="font-subtitle mt-3 text-sm leading-relaxed text-ink-muted">Si necesitás tener tu sitio en marcha hoy, mirá el servicio de páginas a medida y contanos qué estás imaginando.</p>
           </div>
           <a href="/paginas-a-medida" className="mt-8 inline-flex items-center justify-center rounded-xl bg-neon-cyan px-5 py-3 text-sm font-medium text-base-bg transition hover:bg-neon-emerald">Ver páginas a medida</a>
         </div>

@@ -39,7 +39,7 @@ export default function Projects() {
           <div className="flex flex-col gap-5 border-b border-[var(--overlay-border)] pb-6 md:flex-row md:items-center md:justify-between">
             <div>
               <p className="text-lg text-ink">Catálogo de micro apps</p>
-              <p className="mt-1 text-sm text-ink-muted">Encontrá una herramienta para lo que necesitás.</p>
+              <p className="font-subtitle mt-1 text-sm text-ink-muted">Encontrá una herramienta para lo que necesitás.</p>
             </div>
             <label className="flex h-11 w-full items-center gap-2.5 rounded-xl border border-[var(--overlay-border)] bg-[var(--overlay-1)] px-3 text-ink-muted md:max-w-xs">
               <Search className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -102,7 +102,7 @@ export default function Projects() {
                         )}
                       </div>
                       <h3 className="mt-3 font-display text-2xl font-extrabold tracking-tight text-ink">{project.name}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-ink-muted">{project.description}</p>
+                      <p className="font-subtitle mt-2 text-sm leading-relaxed text-ink-muted">{project.description}</p>
 
                       <div className="mt-5 flex flex-wrap gap-2">
                         {project.features.slice(0, 2).map((feature) => (
@@ -146,7 +146,7 @@ export default function Projects() {
                   </span>
                   <p className="mt-5 text-xs font-medium uppercase tracking-[0.12em] text-ink-faint">Colección en crecimiento</p>
                   <h3 className="mt-2 font-display text-2xl font-extrabold leading-tight text-ink">¿Qué herramienta te gustaría encontrar?</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-ink-muted">Estamos sumando nuevas ideas a la biblioteca. Contanos qué tarea te gustaría resolver con una micro app.</p>
+                  <p className="font-subtitle mt-3 text-sm leading-relaxed text-ink-muted">Estamos sumando nuevas ideas a la biblioteca. Contanos qué tarea te gustaría resolver con una micro app.</p>
                 </div>
                 <a href="#contacto" className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-neon-cyan transition-colors hover:text-ink">
                   Proponer una idea <ArrowUpRight className="h-4 w-4" />
@@ -169,7 +169,7 @@ export default function Projects() {
           >
             <div>
               <p className="font-display text-lg font-extrabold text-ink">¿Tenés una idea para una micro app?</p>
-              <p className="mt-1 text-sm text-ink-muted">La próxima herramienta de la biblioteca podría nacer de tu proyecto.</p>
+              <p className="font-subtitle mt-1 text-sm text-ink-muted">La próxima herramienta de la biblioteca podría nacer de tu proyecto.</p>
             </div>
             <a href="#contacto" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-[var(--overlay-border-strong)] px-5 py-3 text-sm text-ink transition-colors hover:bg-[var(--overlay-2)]">
               Hablemos <ArrowUpRight className="h-4 w-4" />

@@ -90,7 +90,7 @@ export default function Services() {
                     <h3 className="mt-6 font-display text-xl font-extrabold leading-tight tracking-tight text-ink md:text-2xl">
                       {service.title}
                     </h3>
-                    <p className="mt-3 text-sm leading-relaxed text-ink-muted">{service.description}</p>
+                    <p className="font-subtitle mt-3 text-sm leading-relaxed text-ink-muted">{service.description}</p>
                   </div>
                 </SpotlightTiltCard>
               </motion.div>

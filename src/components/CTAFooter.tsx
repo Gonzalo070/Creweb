@@ -26,7 +26,7 @@ export default function CTAFooter() {
         >
           <SectionHeading watermark="Hablemos" title="Hablemos" accent="de tu idea" />
 
-          <p className="relative mt-6 max-w-md text-base leading-relaxed text-ink-muted">
+          <p className="font-subtitle relative mt-6 max-w-md text-base leading-relaxed text-ink-muted">
             Contanos qué querés construir y vemos cómo hacerlo realidad. Respondemos por WhatsApp o
             Instagram.
           </p>
