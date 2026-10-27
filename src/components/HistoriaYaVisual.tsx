@@ -33,7 +33,7 @@ export default function HistoriaYaVisual({ className = "" }: { className?: strin
       role="img"
       aria-label="Ilustración de HistoriaYa: un celular con un pedido de estudios, firma digital y dictado por voz"
       className={className}
-      style={{ fontFamily: '"Fraunces", system-ui, sans-serif' }}
+      style={{ fontFamily: '"Montserrat", system-ui, sans-serif', fontWeight: 500 }}
     >
       <defs>
         <radialGradient id={id("glow")} cx="50%" cy="55%" r="50%">

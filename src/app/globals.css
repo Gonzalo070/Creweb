@@ -14,7 +14,7 @@
   --color-ink-faint: #AAA99F;
 
   --font-display: "Space Grotesk", sans-serif;
-  --font-body: "Fraunces", serif;
+  --font-body: "Montserrat", sans-serif;
   --font-heading: "Space Grotesk", sans-serif;
   --font-subtitle: "Montserrat", sans-serif;
 
@@ -80,8 +80,6 @@
 
   body {
     @apply bg-base-bg text-ink font-body antialiased transition-colors duration-300;
-    font-style: italic;
-    font-variation-settings: "SOFT" 100, "WONK" 1;
     background-image:
       radial-gradient(ellipse 80% 35% at 50% -8%, color-mix(in srgb, var(--color-neon-cyan), transparent 89%), transparent),
       linear-gradient(180deg, color-mix(in srgb, var(--color-base-bg), transparent 0%), var(--color-base-bg));
@@ -319,7 +317,7 @@
     justify-content: space-between;
     padding: 0 13px;
     color: rgba(244, 235, 208, 0.55);
-    font: italic 500 9px "Fraunces", serif;
+    font: 500 9px "Montserrat", sans-serif;
     background: rgba(244, 235, 208, 0.035);
     border-bottom: 1px solid rgba(244, 235, 208, 0.07);
   }
@@ -334,7 +332,7 @@
   .editor-sidebar i { width: 11px; height: 11px; border: 1px solid rgba(244, 235, 208, 0.35); border-radius: 3px; }
   .editor-sidebar i:first-child { border-color: #F4EBD0; box-shadow: 0 0 8px rgba(244, 235, 208, 0.28); }
   .editor-code { position: relative; flex: 1; padding-left: 12px; overflow: hidden; }
-  .editor-file { margin: 0 0 11px; color: rgba(244, 235, 208, 0.46); font: italic 8px "Fraunces", serif; }
+  .editor-file { margin: 0 0 11px; color: rgba(244, 235, 208, 0.46); font: 500 8px "Montserrat", sans-serif; }
   .code-row { display: flex; gap: 12px; height: 20px; white-space: pre; font: 9px/20px ui-monospace, SFMono-Regular, Menlo, monospace; }
   .code-number { width: 12px; color: rgba(244, 235, 208, 0.3); text-align: right; }
   .code-violet { color: rgba(244, 235, 208, 0.68); }
@@ -345,7 +343,7 @@
   .editor-status { height: 23px; padding: 0 10px; border-top: 1px solid rgba(244, 235, 208, 0.06); border-bottom: 0; font-size: 7px; }
   .editor-status span { display: inline-flex; align-items: center; gap: 5px; }
   .editor-status i { width: 5px; height: 5px; }
-  .monitor-chin { display: flex; height: 19px; align-items: center; justify-content: center; gap: 7px; color: rgba(244, 235, 208, 0.4); font: italic 700 6px "Fraunces", serif; letter-spacing: 0.2em; }
+  .monitor-chin { display: flex; height: 19px; align-items: center; justify-content: center; gap: 7px; color: rgba(244, 235, 208, 0.4); font: 500 6px "Montserrat", sans-serif; letter-spacing: 0.2em; }
   .monitor-chin i { width: 4px; height: 4px; border-radius: 50%; background: #E6DCC2; box-shadow: 0 0 8px #E6DCC2; }
   .monitor-neck { position: relative; width: 24%; height: 34px; margin: -1px auto 0; background: linear-gradient(90deg, #203749, #45596A 45%, #203749); transform: translateZ(-8px); }
   .monitor-base { position: relative; z-index: 1; width: 42%; height: 13px; margin: -1px auto 0; border: 1px solid rgba(244, 235, 208, 0.28); border-radius: 50% 50% 8px 8px; background: linear-gradient(180deg, #526779, #203749 75%); box-shadow: 0 13px 22px rgba(0, 0, 0, 0.45); transform: rotateX(45deg); }
@@ -366,7 +364,7 @@
     transform-style: preserve-3d;
   }
 
-  .floating-chip { padding: 10px 13px; border-radius: 12px; font: italic 400 9px "Fraunces", serif; animation: chip-float 5s ease-in-out infinite; }
+  .floating-chip { padding: 10px 13px; border-radius: 12px; font: 500 9px "Montserrat", sans-serif; animation: chip-float 5s ease-in-out infinite; }
   .floating-chip svg { color: #F4EBD0; }
   .floating-chip--code { top: 14%; right: 2%; transform: translateZ(100px) rotateY(-12deg) rotateZ(3deg); }
   .floating-chip--terminal { right: 8%; bottom: 16%; animation-delay: -2.7s; transform: translateZ(130px) rotateY(-8deg) rotateZ(-3deg); }
@@ -383,9 +381,9 @@
     animation: preview-float 6s ease-in-out infinite;
   }
 
-  .floating-window__top { display: flex; height: 28px; align-items: center; justify-content: space-between; padding: 0 10px; color: rgba(244, 235, 208, 0.55); font: italic 8px "Fraunces", serif; background: rgba(244, 235, 208, 0.06); }
+  .floating-window__top { display: flex; height: 28px; align-items: center; justify-content: space-between; padding: 0 10px; color: rgba(244, 235, 208, 0.55); font: 500 8px "Montserrat", sans-serif; background: rgba(244, 235, 208, 0.06); }
   .floating-window__preview { min-height: 110px; padding: 12px 11px; background: linear-gradient(145deg, #30485B, #172A3A); }
-  .preview-logo { color: #F4EBD0; font: italic 700 8px "Fraunces", serif; }
+  .preview-logo { color: #F4EBD0; font: 500 8px "Montserrat", sans-serif; }
   .preview-logo span { color: #F4EBD0; }
   .preview-headline { display: grid; gap: 5px; margin-top: 11px; }
   .preview-headline i { width: 92%; height: 8px; border-radius: 4px; background: #F4EBD0; }
