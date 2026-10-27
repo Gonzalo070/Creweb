@@ -36,7 +36,7 @@ export default function SectionHeading({ watermark, title, accent, description }
           </span>
         </h2>
         {description && (
-          <p className="mt-5 max-w-md text-base leading-relaxed text-ink-muted">{description}</p>
+          <p className="font-subtitle mt-5 max-w-md text-base leading-relaxed text-ink-muted">{description}</p>
         )}
       </motion.div>
     </div>

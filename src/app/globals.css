@@ -13,10 +13,10 @@
   --color-ink-muted: #D0CBBE;
   --color-ink-faint: #AAA99F;
 
-  --font-display: "Big Shoulders Display", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
   --font-body: "Fraunces", serif;
-  --font-heading: "Big Shoulders Display", sans-serif;
-  --font-subtitle: "Fraunces", serif;
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-subtitle: "Montserrat", sans-serif;
 
   --shadow-glow-cyan: 0 0 40px -8px rgba(244, 235, 208, 0.24);
   --shadow-glow-violet: 0 0 40px -8px rgba(230, 220, 194, 0.2);
@@ -90,10 +90,17 @@
   h1, h2, h3, h4 {
     @apply font-display;
     font-style: normal;
+    font-weight: 700;
   }
 
   .font-display {
-    font-family: "Big Shoulders Display", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+    font-style: normal;
+  }
+
+  .font-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     font-style: normal;
   }
 

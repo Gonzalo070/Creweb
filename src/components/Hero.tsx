@@ -25,7 +25,7 @@ export default function Hero() {
                 <br className="hidden sm:block" />
                 <span className="hero-title-accent">Experiencias que se sienten.</span>
               </h1>
-              <p className="mt-6 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg md:mt-7">
+              <p className="font-subtitle mt-6 max-w-2xl text-base leading-relaxed text-ink-muted sm:text-lg md:mt-7">
                 Diseñamos micro apps y páginas web con profundidad, movimiento y atención a cada detalle.
               </p>
               <Link href="/micro-apps" className="hero-cta mt-8 inline-flex items-center gap-3 rounded-xl px-6 py-3.5 text-sm font-medium transition-transform hover:-translate-y-0.5 md:mt-9">

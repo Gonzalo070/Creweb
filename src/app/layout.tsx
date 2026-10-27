@@ -25,7 +25,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,100..900,100,1&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@1,9..144,100..900,100,1&family=Montserrat:wght@500&family=Space+Grotesk:wght@700&display=swap"
           rel="stylesheet"
         />
         {/* Aplica el tema guardado (o el del sistema) antes del primer paint,
